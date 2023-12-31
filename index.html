@@ -6,42 +6,22 @@
     <title>M.CRONIN DESIGNS</title>
     <style>
         @import url(portfolio2.css);
-        /* @import url(white-theme.css); */
-        /* @import url(red-theme.css); */
+        @import url(white-theme.css);
+        /* @import url(red-theme.css);
         @import url(green-theme.css);
-        @import url(blue-theme.css);
+        @import url(blue-theme.css); */
         body {
-            font-size: 16px; 
+            /* font-size: 16px;  */
         }
         @media only screen and (max-width: 600px) {
             /* Styles for screens less than or equal to 600px wide  */
             body {
-                font-size: 14px;
+                /* font-size: 14px; */
             }
         }
     </style>
 </head>
 <body>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          // Smooth scroll animation for specific anchor links
-          document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-              e.preventDefault();
-      
-              const targetId = this.getAttribute('href').substring(1);
-              const targetElement = document.getElementById(targetId);
-      
-              if (targetElement) {
-                window.scrollTo({
-                  top: targetElement.offsetTop,
-                  behavior: 'smooth'
-                });
-              }
-            });
-          });
-        });
-      </script>
       
     <!-- <div class="banner"></div> -->
     <header>
@@ -317,5 +297,25 @@
 </section>
 </footer>
 <script src="./color-change.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Smooth scroll animation for specific anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>

@@ -88,7 +88,7 @@ nav .start-aboutme, a:nth-child(4):hover~.animation {
 }
 nav .start-contact, a:nth-child(5):hover~.animation {
     width: 70px;
-    left: 340px;
+    left: 350px;
     background-color: #888888;
 }
 nav .animation{
